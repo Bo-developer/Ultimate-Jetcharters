@@ -1,0 +1,47 @@
+.call-us {
+    display: flex;
+    align-items: center;
+
+    &__label {
+        margin-right: 12px;
+        font: 300 16px/1 $main-font;
+        color: #fff;
+        letter-spacing: 0.04em;
+        text-transform: capitalize;
+    }
+
+    &__link {
+        font: bold 18px/1 $main-font;
+        color: #fff;
+        letter-spacing: 0.04em;
+        white-space: nowrap;
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: #30B192;
+        }        
+    }
+
+    &__icon {
+        display: none;
+    }
+
+    @media (max-width: 767px) {
+
+        &__label {
+            display: none;
+        }
+
+        &__link {
+            
+            span {
+                display: none;
+            }
+        }
+        
+        &__icon {
+            display: block;
+        }
+    }
+}

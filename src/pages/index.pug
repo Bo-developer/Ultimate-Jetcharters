@@ -1,0 +1,30 @@
+extends common/layout
+
+block main
+  main.main
+    include includes/index/hero
+
+    .main-section.discover-difference(style={'background-image': 'url("img/discover_difference-bg.jpg")'})
+        .main-section__inner.container
+            .main-section__text
+                h2.main-section__heading Discover the Ultimate difference with us
+                p.main-section__desc Ultimate Jetcharters provides a safe, sterile and safe aircraft for all of our charter clients. Our private charter service allows our clients to choose who they fly with and when they fly. Our clients will continue to have total control over their flight experience. If you have any questions or concerns about traveling during this time, please do not hesitate to contact us.
+                a.btn.btn--bd(href="#") Contact us
+    
+    include includes/index/charter-services
+
+    .main-section.main-section--reverse.have-jets(style={background: 'url("img/have_jets-bg.png") no-repeat center/cover'})
+        .main-section__inner.container
+            .main-section__text
+                h2.main-section__heading.main-section__heading--light Have jets, will travel
+                p.main-section__desc.main-section__desc--light Our Dornier 328 and Embraer 135LR Jets can transport employees, clients and suppliers to/from headquarters or other locations throughout the United States, Canada, Mexico, Central America, and the Caribbean (including Cuba).
+                a.btn.btn--bd.btn--light.btn--ico(href="#") TRIP INQUIRY
+
+    include includes/index/charter-benefits
+
+    .main-section.broker-or-operator(style={background: 'linear-gradient(90deg, rgba(17, 41, 56, 0.86) 28.62%, rgba(17, 41, 56, 0) 100%), url("img/section_3-bg.jpg") no-repeat center/cover'})
+        .main-section__inner.container
+            .main-section__text
+                h2.main-section__heading.main-section__heading--light Are you an Air Charter Broker or Operator?
+                p.main-section__desc.main-section__desc--light If so, we want to work with you. Not only will Ultimate Jetcharters value our relationship but actually work with you to help strengthen your relationship with your client(s).
+                a.btn.btn--bd.btn--light(href="#") Read more

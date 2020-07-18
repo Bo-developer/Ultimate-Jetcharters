@@ -1,0 +1,19 @@
+extends common/layout
+
+block title
+  title Zero article
+
+block main
+  .container
+    .center-cols
+      main.main
+        include includes/single-post/article
+        include includes/single-post/author
+        include includes/single-post/comments
+        include includes/single-post/related-posts
+      aside.aside.widgets
+        include includes/modules/about-me
+        include includes/modules/subscribe
+        include includes/modules/popular-posts
+        include includes/modules/categories
+        include includes/modules/advert

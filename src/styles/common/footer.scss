@@ -1,0 +1,307 @@
+.footer {
+  flex: 0 0 auto;
+  margin-top: auto;
+
+  &__top {
+    padding: 74px 0;
+    background: #ECF4F4;
+
+    .footer__inner {
+      display: block;
+    }
+  }
+
+  &__middle {
+    padding: 79px 0 82px;
+    background: #1D4A4A;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__heading {
+    margin: 0 0 24px;
+    font: normal 24px/1 $heading-font;
+    color: #CDEAEA;
+  }
+
+  &__logo {
+
+    .logo__link {
+      margin-bottom: 22px;
+    }
+  }
+
+  &__links {
+    max-width: 250px;
+    padding: 0 5px;
+  }
+
+  &__info {
+    
+    .footer__heading {
+      line-height: 1.2;
+    }
+  }
+
+  &__contacts {
+    margin-bottom: 45px;
+  }
+
+  &__newsletter {
+    margin-bottom: 20px;
+  }
+
+  &__social {
+    width: 100%;
+    max-width: 305px;
+
+    .social__item {
+      margin-right: 16px;
+  
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  
+    .social__link {
+      width: 48px;
+      height: 48px;
+    }
+  
+    .social__ico {
+      transform: scale(1.1);
+    }    
+  }
+
+  &__logos {
+    flex-basis: auto;
+    width: 100%;
+  }
+
+  @media (max-width: 1199px) {
+    
+    &__logo {
+      display: none;
+    }
+  }
+
+  @media (max-width: 991px) {
+
+    &__top {
+      padding: 50px 0;
+    }
+    
+    &__middle {
+      padding: 50px 0;
+      
+      .footer__inner {
+        flex-wrap: wrap;
+      }
+    }
+
+    &__logo {
+      order: 4;
+      align-self: flex-end;
+      display: block;
+      width: calc(50% - 10px);      
+    }
+
+    &__links {
+      width: calc(25% - 10px);
+      max-width: none;
+      margin-bottom: 20px;
+      padding: 0;
+    }
+
+    &__info {      
+      width: calc(50% - 10px);
+    }
+
+    &__social {
+      order: 5;
+      width: calc(50% - 10px);
+      max-width: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    
+    &__logo {
+      order: 6;
+      width: 100%;
+    }
+
+    &__links {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    &__social {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.copyright {
+  margin: 0;
+  font: normal 14px/1.6 $main-font;
+  color: #528C8C;
+}
+
+.footer-links {
+  
+  &__item {
+    margin-bottom: 32px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    font: normal 18px/1 $main-font;
+    color: #fff;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color:#30B192;
+    }
+  }
+}
+
+.footer-contacts {
+
+  &__row {
+    margin: 0 0 20px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }    
+  }
+
+  &__label {
+    display: inline-block;
+    min-width: 55px;
+    margin-right: 24px;
+    font: normal 18px/1 $main-font;
+    color: #528C8C;
+  }
+
+  &__link {
+    font: bold 21px/1 $main-font;
+    color: #CDEAEA;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+  }
+}
+
+.newsletter {
+
+  &__form {
+    position: relative;
+  }
+
+  &__label {
+    color: rgba(255,255,255,.8);
+  }
+
+  &__input {
+    padding-right: 30px;
+    color: #fff;
+    border-color: rgba(35,113,94,.3);
+    background: none;
+  }
+
+  &__submit {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    display: block;
+    padding: 0;
+    border: none;
+    background: none;
+    padding: 12px 0 12px 13px;
+  }
+}
+
+.take-advantage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__heading {
+    margin: 0 53px 0 0;
+    font: 600 48px/1.4 $heading-font;
+    color: #23715E;
+  }
+
+  @media (max-width: 1439px) {
+    
+    &__heading {
+      font-size: 40px;
+    }
+  }
+
+  @media (max-width: 1199px) {
+    display: block;
+    text-align: center;
+
+    &__heading {
+      margin: 0 0 30px;
+    }
+  }
+}
+
+.footer-logos {
+  padding: 13px 0;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+
+    &:hover,
+    &:focus,
+    &:active {
+      transform: scale(1.03);
+    }
+  }
+
+  &__image {
+    display: block;
+  }
+
+  @media (max-width: 991px) {
+    
+    &__list {
+      justify-content: center;
+    }
+
+    &__item {
+      margin: 0 auto 15px;
+
+      &:last-child {
+        margin: auto;
+      }
+    }
+  }
+}

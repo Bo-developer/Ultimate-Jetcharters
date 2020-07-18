@@ -1,0 +1,47 @@
+.author {
+
+  &__inner {
+    position: relative;
+    min-height: 96px;
+    padding-left: 120px;
+  }
+
+  &__pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__name {
+    margin: 0 0 10px;
+    font: 700 16px/1.1 "Oswald", sans-serif;
+    color: #000;
+  }
+
+  &__desc {
+    margin: 0;
+    font: 400 14px/1.6 "Lora", sans-serif;
+    color: #7d7d7d;
+  }
+
+  @media (max-width: 576px){
+
+    &__inner {
+      padding: 0;
+    }
+
+    &__pic {
+      position: static;
+      display: block;
+      margin: 0 auto 15px;
+    }
+
+    &__name {
+      text-align: center;
+    }
+
+    &__desc {
+      text-align: center;
+    }
+  }
+}

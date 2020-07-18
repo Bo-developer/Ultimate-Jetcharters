@@ -1,0 +1,29 @@
+mixin home-article(title, category, img, link, description)
+  article.home-articles__post
+    a.home-articles__link(href=link)
+      img.home-articles__cover(src=img alt="Being Atraveler in The World, Just Like A lion Without Beard" width="770" height="504")
+    p.home-articles__category <b>in</b> #{category}
+    h2.home-articles__title
+      a(href=link) Being Atraveler in The World, Just Like A lion Without Beard
+    .home-articles__info
+      p.home-articles__date Posted on &nbsp;
+        time(datetime="2020-02-29 12:00") February 29, 2020
+      p.home-articles__author by
+        img.home-articles__avatar(src="img/author-ico.png" alt="Cool Man")
+        b Cool Man
+    p.home-articles__desc=description
+
+    include ../modules/share-buttons
+
+.main__section.home-articless
+  ul.home-articles__list
+    li.home-articles__item
+      +home-article('Being Atraveler in The World, Just Like A lion Without Beard', 'Relationship', 'img/article-1.jpg', 'single-post.html', 'Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.')
+    li.home-articles__item
+      +home-article('Being Atraveler in The World, Just Like A lion Without Beard', 'Relationship', 'img/article-2.jpg', 'single-post.html', 'Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.')
+    li.home-articles__item
+      +home-article('Being Atraveler in The World, Just Like A lion Without Beard', 'Relationship', 'img/article-3.jpg', 'single-post.html', 'Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.')
+    li.home-articles__item
+      +home-article('Being Atraveler in The World, Just Like A lion Without Beard', 'Relationship', 'img/article-4.jpg', 'single-post.html', 'Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.')
+    li.home-articles__item
+      +home-article('Being Atraveler in The World, Just Like A lion Without Beard', 'Relationship', 'img/article-5.jpg', 'single-post.html', 'Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC.')

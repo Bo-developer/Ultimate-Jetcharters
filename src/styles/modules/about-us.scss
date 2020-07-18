@@ -1,0 +1,85 @@
+.about-us {
+  width: 970px;
+  max-width: 100%;
+  margin: 0 auto;
+  background: #fff;
+
+  &__cover {
+    position: relative;
+    height: 504px;
+    margin-bottom: 45px;
+    background: url("../img/about_us-bg.jpg") no-repeat center/cover;
+  }
+
+  &__avatar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__heading {
+    margin: 0 0 35px;
+    font: 700 14px/1.7 "Oswald", sans-serif;
+    color: #363636;
+    letter-spacing: 0.025em;
+    text-align: center;
+    text-transform: uppercase;
+
+    span {
+      display: inline-block;
+      transition: 0.3s ease-out;
+
+      &:after {
+        content: "";
+        display: block;
+        width: calc(100% + 20px);
+        height: 4px;
+        margin: 0 auto;
+        background: #000;
+        transition: 0.3s ease-out;
+        transform: translateX(-10px);
+      }
+    }
+  }
+
+  &__desc {
+    width: 750px;
+    max-width: 100%;
+    margin: 0 auto 95px;
+
+    p {
+      margin: 0;
+      font: italic 400 14px/1.7 "Lora", sans-serif;
+      color: #000;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 991px) {
+
+    &__cover {
+      height: 400px;
+    }
+
+    &__desc {
+      padding: 0 25px;
+    }
+  }
+
+  @media (max-width: 767px) {
+
+    &__cover {
+      height: 300px;
+      margin-bottom: 25px;
+    }
+
+    &__heading {
+      margin-bottom: 15px;
+    }
+
+    &__desc {
+      margin-bottom: 35px;
+    }
+  }
+}

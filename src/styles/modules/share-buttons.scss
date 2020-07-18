@@ -1,0 +1,61 @@
+.share-buttons {
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__btn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    line-height: 1;
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    background: #efefef;
+    appearance: none;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+
+    &:hover {
+      background: #fb7c56;
+
+      .share-buttons__ico {
+        fill: #fff;
+      }
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 2px #818181;
+      outline: none;
+    }
+
+    &:active {
+      background: #fb7c56;
+      box-shadow: 0 0 0 2px #000;
+      outline: none;
+
+      .share-buttons__ico {
+        fill: #fff;
+      }
+    }
+  }
+
+  &__ico {
+    display: inline-block;
+    vertical-align: middle;
+    fill: #000;
+    transition: 0.3s ease-out;
+  }
+}

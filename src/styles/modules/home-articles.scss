@@ -1,0 +1,153 @@
+.home-articles {
+
+  &__item {
+    display: block;
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__post {
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+    background: #fff;
+  }
+
+  &__link {
+    display: block;
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    &:hover,
+    &:focus,
+    &:active {
+
+      img {
+        transform: scale(1.03);
+      }
+    }
+  }
+
+  &__cover {
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s ease-out;
+  }
+
+  &__category {
+    margin: 0 0 15px;
+    font: italic 400 14px/2 "Lora", sans-serif;
+    color: #818181;
+
+    b {
+      font-weight: 400;
+      color: #fb7c56;
+    }
+  }
+
+  &__title {
+    margin: 0 0 15px;
+    font: 600 24px/1.1 "Oswald", sans-serif;
+    color: #000;
+
+    a {
+      transition: 0.3s ease-out;
+    }
+
+    a:hover,
+    a:focus,
+    a:active {
+      color: #fb7c56;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    font: italic 400 14px/2 "Lora", sans-serif;
+    color: #fb7c56;
+  }
+
+  &__date {
+    margin: 0;
+
+    time {
+      color: #818181;
+    }
+  }
+
+  &__author {
+    margin: 0;
+
+    &:before {
+      content: "-";
+      margin: 0 15px;
+      color: #818181;
+    }
+    b {
+      font-weight: 400;
+      color: #818181;
+    }
+  }
+
+  &__avatar {
+    display: inline-block;
+    margin: 0 15px;
+    vertical-align: middle;
+  }
+
+  &__desc {
+    margin: 0 0 45px;
+    padding: 0 30px;
+    font: 400 14px/1.6 "Lora", sans-serif;
+    color: #000;
+    letter-spacing: 0.025em;
+  }
+
+  &__sharing {
+    padding: 25px 0;
+    border-top: 1px dashed rgba(0, 0, 0, 0.17);
+  }
+
+  @media (max-width: 767px) {
+
+    &__link {
+      margin-bottom: 10px;
+    }
+
+    &__category {
+      margin-bottom: 10px;
+    }
+
+    &__title {
+      padding: 0 15px;
+      font-size: 20px;
+    }
+
+    &__info {
+      display: block;
+    }
+
+    &__author {
+
+      &:before {
+        display: none;
+      }
+    }
+
+    &__desc {
+      margin-bottom: 25px;
+      padding: 0 15px;
+    }
+
+    &__sharing {
+      padding: 15px 0;
+    }
+  }
+}
+
+@import "share-buttons.scss";

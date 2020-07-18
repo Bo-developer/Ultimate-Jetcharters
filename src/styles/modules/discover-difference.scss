@@ -1,0 +1,31 @@
+.discover-difference {
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-width: 992px) {
+        min-height: 720px;
+    }
+}
+
+
+.have-jets {
+    position: relative;
+    padding-top: 140px;
+
+    @media (min-width: 992px) {
+        min-height: 767px;
+    }
+
+    @media (max-width: 991px) {
+        padding-top: 100px;
+    }
+}
+
+.broker-or-operator {
+    margin-bottom: 0;
+
+    @media (min-width: 992px) {
+        min-height: 779px;
+    }  
+}

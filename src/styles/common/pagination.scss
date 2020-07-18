@@ -1,0 +1,36 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__link {
+    font: 700 12px/2 "Lora", sans-serif;
+    color: #111;
+    letter-spacing: 0.05em;
+    transition: 0.3s ease-out;
+
+    &--next {
+
+      .pagination__arrow {
+        margin-right: 0;
+        margin-left: 15px;
+      }
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fb7c56;
+
+      .pagination__arrow {
+        fill: #fb7c56;
+      }
+    }
+  }
+
+  &__arrow {
+    display: inline-block;
+    margin-right: 15px;
+    transition: 0.3s ease-out;
+  }
+}

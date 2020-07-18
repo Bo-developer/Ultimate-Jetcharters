@@ -1,0 +1,53 @@
+.hero {
+    min-height: 975px;
+    margin-bottom: 112px;
+    padding-top: 275px;
+    padding-bottom: 89px;
+
+    &__text {
+        max-width: 580px;
+    }
+
+    &__heading {
+        margin: 0 0 6px;
+        font: 600 88px/1.1 $heading-font;
+        color: #fff;
+        letter-spacing: 0.02em;
+    }
+
+    &__desc {
+        margin: 0;
+        font: normal 18px/1.8 $main-font;
+        color: #fff;      
+    }
+
+    @media (max-width: 991px) {
+        min-height: auto;
+        padding-top: 200px;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+
+        &__heading {
+            font-size: 72px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        margin-bottom: 30px;
+        padding-top: 100px;
+
+        &__text {
+            max-width: 100%;
+        }
+
+        &__heading {
+            margin-bottom: 10px;
+            font-size: 40px;
+        }
+
+        &__desc {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    }
+}

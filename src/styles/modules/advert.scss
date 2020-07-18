@@ -1,0 +1,21 @@
+.advert {
+
+  &__link {
+    display: block;
+    overflow: hidden;
+
+    &:hover,
+    &:focus,
+    &:active {
+      .advert__cover {
+        transform: scale(1.03);
+      }
+    }
+  }
+
+  &__cover {
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s ease-out;
+  }
+}

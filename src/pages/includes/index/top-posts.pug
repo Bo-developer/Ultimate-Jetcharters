@@ -1,0 +1,16 @@
+mixin top-post(title, category, img, link)
+  a.top-posts__link(href=link)
+    img.top-posts__cover(src=img alt="Hero" width="480" height="408")
+    h2.top-posts__title= title
+    p.top-posts__category= category
+
+.top-posts
+  ul.top-posts__list
+    li.top-posts__item
+      +top-post('Lorem Ipsum is simply dummy text of the printing', 'Jeans And Shirt', 'img/hero-1.jpg', 'single-post.html')
+    li.top-posts__item
+      +top-post('Lorem Ipsum is simply dummy text of the printing', 'Good Shoes For Men, Blue and Brown combination', 'img/hero-2.jpg', 'single-post.html')
+    li.top-posts__item
+      +top-post('Lorem Ipsum is simply dummy text of the printing', 'Display And Store', 'img/hero-3.jpg', 'single-post.html')
+    li.top-posts__item
+      +top-post('Lorem Ipsum is simply dummy text of the printing', 'Leather Shoes', 'img/hero-4.jpg', 'single-post.html')

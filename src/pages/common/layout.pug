@@ -1,0 +1,26 @@
+doctype html
+html(lang="en")
+    block head
+        head
+            meta(charset="utf-8")
+            block title
+              title Ultimate Jetcharters
+            block meta
+              meta(name="viewport" content="width=device-width, initial-scale=1")
+              meta(http-equiv="X-UA-Compatible" content="IE=edge")
+            link(href="img/favicon.ico" type="image/x-icon" rel="shortcut icon")
+            block fonts
+              link(href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet")
+            block styles
+              link(href="css/style.css" rel="stylesheet")
+              link(href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet")
+    body
+        block header
+            include header
+        block main
+        block footer
+            include footer
+        block scripts
+          script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+          script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js")
+          script(src="js/main.min.js")

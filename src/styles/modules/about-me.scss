@@ -1,0 +1,31 @@
+.about-me {
+
+  &__link {
+    display: block;
+    margin: 0 auto 25px;
+    overflow: hidden;
+
+    &:hover,
+    &:focus,
+    &:active {
+      .about-me__cover {
+        transform: scale(1.03);
+      }
+    }
+  }
+
+  &__cover {
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s ease-out;
+  }
+
+  &__desc {
+    margin: 0;
+    padding: 0 10px;
+    font: italic 400 14px/1.7 "Lora", sans-serif;
+    color: #000;
+    letter-spacing: 0.025em;
+    text-align: center;
+  }
+}

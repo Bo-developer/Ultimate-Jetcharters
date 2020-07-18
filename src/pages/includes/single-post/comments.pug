@@ -1,0 +1,37 @@
+section.widgets__box.widgets__box--big.comments
+  h3.widgets__heading.widgets__heading--bigger-indent.author__heading
+    span Comments
+  ul.comments__list.comments__section
+    li.comments__item
+      article.comment
+        header.comment__header
+          h4.comment__auhtor Beard
+          img.comment__avatar(src="img/comment-avatar.jpg" alt="Beard" width="72" height="72")
+          time.comment__date(datetime="2020-03-10 10:00") March 10, 2020
+          button.comment__reply.btn(type="button") Reply
+        p.comment__text Just a simple com is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and ment for you!
+      article.comment
+        header.comment__header
+          h4.comment__auhtor Dark00
+          img.comment__avatar(src="img/comment-avatar-2.jpg" alt="Dark00" width="72" height="72")
+          time.comment__date(datetime="2020-03-10 10:00") March 10, 2020
+          button.comment__reply.btn(type="button") Reply
+        p.comment__text Been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and ment for you!
+    li.comments__item
+      article.comment
+        header.comment__header
+          h4.comment__auhtor Looner
+          img.comment__avatar(src="img/comment-avatar-3.jpg" alt="Looner" width="72" height="72")
+          time.comment__date(datetime="2020-03-10 10:00") March 10, 2020
+          button.comment__reply.btn(type="button") Reply
+        p.comment__text Just a simple com is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and ment for you!
+  section.comments__section.leave-comment
+    h4.leave-comment__heading Leave a comment
+    form.leave-comment__form(action="#")
+      label.leave-comment__label.visually-hidden(for="comment-name") Name...
+      input.leave-comment__input#comment-name(type="text" placeholder="Name...")
+      label.leave-comment__label.visually-hidden(for="comment-email") Email
+      input.leave-comment__input#comment-email(type="email" placeholder="Email")
+      label.leave-comment__label.visually-hidden(for="comment-message") Your comment
+      textarea.leave-comment__textarea#comment-message(placeholder="Your comment")
+      button.leave-comment__submit(type="submit") Submit comment

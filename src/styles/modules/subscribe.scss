@@ -1,0 +1,62 @@
+.subscribe {
+  background: #fb7c56;
+
+  &__heading {
+    color: #fff;
+
+    span {
+      &:after {
+        background: #fff;
+      }
+    }
+  }
+  &__desc {
+    margin: 0 0 10px;
+    font: 400 14px/1.6 "Lora", sans-serif;
+    color: #fff;
+  }
+  &__form {}
+  &__label {}
+  &__input {
+    display: block;
+    width: 100%;
+    height: 42px;
+    margin: 0 0 10px;
+    padding: 0 10px;
+    font: 400 14px/1 "Lora", sans-serif;
+    color: #acacac;
+    border: 1px solid #d7d7d7;
+    border-radius: 0;
+    background: #fff;
+    transition: 0.3s ease-out;
+    appearance: none;
+
+    &:focus {
+      border-color: #000;
+      background: #fff;
+      outline: none;
+    }
+  }
+  &__submit {
+    display: block;
+    width: 100%;
+    height: 42px;
+    padding: 0 10px;
+    font: bold 14px/1 "Oswald", sans-serif;
+    color: #fff;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    border: 1px solid #000;
+    background: #000;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+
+    &:hover {
+      color: #000;
+      border-color: #efefef;
+      background: #efefef;
+    }
+  }
+}

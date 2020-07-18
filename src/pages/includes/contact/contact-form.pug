@@ -1,0 +1,14 @@
+section.widgets__box.widgets__box--big.contact-form
+  h2.widgets__heading.widgets__heading--bigger-indent
+    span Send Us a Message
+
+  form.contact-form__form(action="#")
+    label.contact-form__label.visually-hidden(for="contact-name") Name
+    input.contact-form__input#contact-name(type="text" name="name" placeholder="Name")
+    label.contact-form__label.visually-hidden(for="contact-email") Email
+    input.contact-form__input#contact-email(type="email" name="email" placeholder="Email")
+    label.contact-form__label.visually-hidden(for="contact-phone") Phone
+    input.contact-form__input#contact-phone(type="tel" name="phone" placeholder="Phone")
+    label.contact-form__label.visually-hidden(for="contact-message") Message
+    textarea.contact-form__textarea#contact-message(name="message" placeholder="Message")
+    button.contact-form__submit(type="submit") Submit comment
