@@ -5,6 +5,10 @@
 
     @media (min-width: 992px) {
         min-height: 720px;
+        
+        .main-section__inner {
+            height: 1px;
+        }        
     }
 }
 
@@ -15,6 +19,10 @@
 
     @media (min-width: 992px) {
         min-height: 767px;
+
+        .main-section__inner {
+            height: 1px;
+        }            
     }
 
     @media (max-width: 991px) {
@@ -27,5 +35,9 @@
 
     @media (min-width: 992px) {
         min-height: 779px;
+
+        .main-section__inner {
+            height: 1px;
+        }    
     }  
 }

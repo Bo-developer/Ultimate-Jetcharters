@@ -15,6 +15,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  height: 100%;
   min-height: 100%;
   margin: 0;
   background: #fff;
@@ -175,6 +176,11 @@ button {
       top: -15px;
       font-size: 14px;
     }
+  }
+
+  &.filled + span {
+    top: -15px;
+    font-size: 14px;
   }
 }
 
